@@ -1,4 +1,16 @@
 <h1>
   {{title}}
-  <app-friends></app-friends>
+  <md-sidenav-container class="example-container">
+  <md-sidenav #sidenav class="example-sidenav">
+    Options
+  </md-sidenav>
+
+  <div class="example-sidenav-content">
+    <button md-button (click)="sidenav.open()">
+      Open sidenav
+    </button>
+  </div>
+
+</md-sidenav-container>
+
 </h1>

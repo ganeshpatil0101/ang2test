@@ -6,6 +6,9 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { FriendsComponent } from './friends/friends.component';
 
+import {MaterialModule} from '@angular/material';
+import 'hammerjs';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +17,8 @@ import { FriendsComponent } from './friends/friends.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
