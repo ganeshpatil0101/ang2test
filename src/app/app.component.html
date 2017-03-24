@@ -1,5 +1,4 @@
-<h1>
-  {{title}}
+<h1>{{title}}</h1>
   <md-sidenav-container class="example-container">
   <md-sidenav #sidenav class="example-sidenav">
     Options
@@ -12,5 +11,12 @@
   </div>
 
 </md-sidenav-container>
+<md-input-container>
+  <input mdInput placeholder="Favorite food" value="Sushi">
+</md-input-container>
 
-</h1>
+<md-progress-bar mode="indeterminate"></md-progress-bar>
+<app-snackbar></app-snackbar>
+<app-friends></app-friends>
+<br>
+<p appTestdirective> testdirective testdirective </p>

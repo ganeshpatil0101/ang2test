@@ -8,11 +8,15 @@ import { FriendsComponent } from './friends/friends.component';
 
 import {MaterialModule} from '@angular/material';
 import 'hammerjs';
+import { SnackbarComponent } from './snackbar/snackbar.component';
+import { TestdirectiveDirective } from './testdirective.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FriendsComponent
+    FriendsComponent,
+    SnackbarComponent,
+    TestdirectiveDirective
   ],
   imports: [
     BrowserModule,
