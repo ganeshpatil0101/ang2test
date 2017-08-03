@@ -1,9 +1,12 @@
 import { Injectable } from '@angular/core';
-
+import { Http } from '@angular/http';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/toPromise';
+import { Observable } from 'rxjs/Observable';
 @Injectable()
 export class FriendsService {
 friends:Array<any>;
-  constructor() {
+  constructor(private http: Http) {
     this.friends = [
       { age: 40, name: 'Jordan Houston' },
       { age: 23, name: 'Josh Beh' },
@@ -23,4 +26,10 @@ friends:Array<any>;
   getFriends() {
       return this.friends;
     }
+    getFriendsObserver(){
+      return this.http.get('https://jsonplaceholder.typicode.com/users');
+    }
+    
+
 }
+
